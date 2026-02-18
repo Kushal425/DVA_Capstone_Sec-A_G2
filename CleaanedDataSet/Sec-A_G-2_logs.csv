@@ -1,0 +1,127 @@
+Data Cleaning Logs – Law & Justice Crime Dataset
+
+Standardized column names to maintain uniform naming conventions across the dataset.
+
+Performed Find & Replace operations:
+
+"Replaced inconsistent state names (e.g., “DELHI/UT Total” to “Delhi”)."
+
+"Standardized abbreviations (e.g., “A&N Islands” to “Andaman and Nicobar Islands”)."
+
+Replaced 0 entries representing no crime where applicable.
+
+Checked for and removed duplicate records to ensure data accuracy.
+
+Converted relevant columns to appropriate data types (numeric columns to Number format).
+
+Standardized text formatting by converting uppercase entries to Proper Case.
+
+Removed rare or irrelevant crime columns to focus analysis on significant crime categories.
+
+Added a Total_Crimes column by summing all major crime categories.
+
+Sorted the sheet alphabetically by State/UT for structured organization.
+
+Updated district names from previous administrative names to current standardized names.
+
+"Merged split district entries (e.g., Kutch (East(G)) and Kutch (West-Bhuj)) into a single district by summing their values."
+
+Ensured consistency between State/UT and District names across the dataset.
+
+
+
+
+Analysis – Derived Columns
+
+Added Total_Crimes by summing all major crime categories to calculate overall crime volume.
+
+Added Violent_Crimes (Murder + Rape + Kidnapping & Abduction + Robbery + Assault on Women) to analyze serious offenses collectively.
+
+Added Property_Crimes (Theft + Burglary + Other Property Offenses) to evaluate economic-related crime trends.
+
+Added YoY_Growth_% using
+(Current Year Total − Previous Year Total) / Previous Year Total × 100
+to measure annual crime growth.
+
+Calculated CAGR (2001–2012) to evaluate long-term crime growth trend across the dataset.
+
+"Added Crime_Against_Women_Total by summing rape, dowry deaths, assault on women, and kidnapping of women for focused gender-based crime analysis."
+
+Added Violent_to_Property_Ratio to understand the distribution between severe and economic crimes over time.
+
+
+Analysis – KPIs
+
+Added Total Murders (2001–2012) using SUM aggregation.
+
+Added Total Rapes (2001–2012) using SUM aggregation.
+
+Added Total Districts Covered using COUNT DISTINCT of districts.
+
+Added Overall YoY Growth % (Latest Year) to highlight recent growth trend.
+
+Added Overall Crime CAGR (2001–2012) to measure long-term growth.
+
+Added Grand Total Crimes to summarize the magnitude of crime across all years.
+
+
+Analysis – Pivot Tables
+
+Created Year-wise Crime Summary Pivot
+
+Created State-wise Crime Breakdown Pivot
+
+Created Top 10 States by Total Crimes Pivot
+
+Created District-wise Crime Pivot
+
+Created Fastest Rising States by YoY Growth Pivot
+
+Created Crime Against Women Pivot
+
+Created Violent vs Property Crime Pivot
+
+Created Offense Mix Share by Year Pivot
+
+
+Dashboard
+
+Added 4 main KPI cards:
+
+Total Murders
+
+Total Rapes
+
+Districts Covered
+
+YoY Growth %
+
+Added charts:
+
+Top 10 States by Total Crimes
+
+Total Crimes vs District
+
+Fastest Rising States by YoY Growth
+
+Crime Type Comparison (State-wise)
+
+Crime by State (Donut Chart)
+
+Offense Mix Share by Year
+
+Yearly Crime Trend (Combo Chart)
+
+Violent vs Property Crime Trend
+
+Crime Against Women Trend
+
+Added slicers for:
+
+Year
+
+State/UT
+
+Connected slicers to all pivot tables for interactive filtering.
+
+"Standardized dashboard theme, chart titles, and alignment for consistency and readability."
