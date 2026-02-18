@@ -100,7 +100,7 @@ The dashboard includes:
 
 # 🖼 Dataset Analysis Screenshots
 
-*(Insert dashboard screenshots here)*
+![Dashboard Overview](Dashboard/Sec-A_G-2__Dashboard.png)
 
 Examples:
 - Dashboard Overview  
